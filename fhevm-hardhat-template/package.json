@@ -1,0 +1,47 @@
+{
+  "name": "fhevm-example-template",
+  "version": "1.0.0",
+  "description": "FHEVM Smart Contract Example Template",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=7.0.0"
+  },
+  "license": "BSD-3-Clause-Clear",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./artifacts ./cache ./types && npm run typechain",
+    "compile": "hardhat compile",
+    "coverage": "hardhat coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "test": "hardhat test",
+    "test:watch": "hardhat test --watch",
+    "typechain": "hardhat typechain",
+    "deploy:localhost": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "verify:sepolia": "hardhat verify --network sepolia"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.9.1",
+    "encrypted-types": "^0.0.4"
+  },
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "^0.3.0-1",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.19.8",
+    "chai": "^4.5.0",
+    "hardhat": "^2.26.0",
+    "rimraf": "^6.0.1",
+    "solhint": "^6.0.0",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.8.3"
+  }
+}
