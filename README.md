@@ -2,7 +2,7 @@
 
 A comprehensive collection of standalone, Hardhat-based Fully Homomorphic Encryption Virtual Machine (FHEVM) example repositories demonstrating privacy-preserving smart contracts for a virtual metaverse environment.
 
-[FHEVM Example Hub Secret Metaverse.mp4](https://streamable.com/sdzjsx)
+[FHEVM Example Hub Secret Metaverse.mp4](https://youtu.be/fnk-cRVULJc)
 ## Overview
 
 This project delivers a complete FHEVM education and development platform, featuring:
